@@ -1,9 +1,14 @@
 <?php
+/* 
+ * Add to functions.php
+ * /
+ 
 /*
-* Function for grabbing breadcrumb to current page
+ * Function for grabbing breadcrumb to current page
+ * @param string seperator in markup for each breadcrumb item
+ * @return string the breadcrumb ul 
  */
-
-function get_breadcrumb($separator){
+function get_breadcrumb($separator = null){
 	
 	global $post;
 	global $wp_query;
