@@ -11,8 +11,8 @@ i<?php
  *
  * Changelog: 
  *
- * Added check in add metabox function to allow for adding of metaboxes to specfic page templates
- *
+ * Added check in add metabox function to allow for adding of metaboxes to specific page templates only
+ * rather than just globally on all pages or posts
  * 
  * */
 class smart_meta_box
