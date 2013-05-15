@@ -38,7 +38,7 @@ class smart_meta_box {
 	// add  metabox function
 	public function add(){
 		
-		foreach($this->meta_box['pages'] as $page){
+		foreach($this->meta_box['pages'] as $page) {
 			//Added check here to see if post type is page or post
 			if ($page == 'post' || $page == 'page'){
 			    add_meta_box($this->id, $this->meta_box['title'], array(&$this, 'show'), $page, $this->meta_box['context'], $this->meta_box['priority']);
