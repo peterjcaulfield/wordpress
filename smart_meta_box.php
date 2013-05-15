@@ -17,10 +17,10 @@ i<?php
 * */
 class smart_meta_box {
 
-protected $meta_box;
-protected $id;
+	protected $meta_box;
+	protected $id;
 
-static $prefix = '_smartmeta_';
+	static $prefix = '_smartmeta_';
 
 	// create meta box based on given data
 	public function __construct($id, $opts) {
@@ -163,7 +163,8 @@ function add_meta_box($id, $opts) {
 * using all features supported by the generator
 */
 
-/*add_smart_meta_box('smart_meta_box_demo', array(
+/*
+add_smart_meta_box('smart_meta_box_demo', array(
 		'title'     => 'Smart meta box',
 		'pages'		=> array('post'),
 		'context'   => 'normal',
@@ -214,4 +215,5 @@ function add_meta_box($id, $opts) {
 			),
 		) // closes fields array
 	) // closes opts array
-); // closes function parameters */
+); // closes function parameters 
+*/
