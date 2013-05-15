@@ -214,4 +214,4 @@ function add_meta_box($id, $opts) {
 			),
 		) // closes fields array
 	) // closes opts array
-); // closes function parameters
+); // closes function parameters */
