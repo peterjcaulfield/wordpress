@@ -25,19 +25,19 @@ class smart_meta_box
     
     // create meta box based on given data
     public function __construct($id, $opts)
-    {
+    {   //check if we are running as admin
         if (!is_admin())
             return;
         
         $this->meta_box = $opts;
         $this->id       = $id;
         // here we hook the class' add and save methods to the add meta box and save post hooks respectively
-        add_action('add_meta_boxes', array(
+        add_action('add_meta_boxes', array( // this action runs when the page edit window is loaded
             &$this,
             'add'
         ));
         
-        add_action('save_post', array(
+        add_action('save_post', array( // this action runs when you save a post
             &$this,
             'save'
         ));
@@ -50,16 +50,16 @@ class smart_meta_box
             //Added check here to see if post type is page or post
             if ($page == 'post' || $page == 'page') {
                 add_meta_box($this->id, $this->meta_box['title'], array(
-                    &$this,
+                    &$this,  // callback function for rendering passed as an array containing ref to class and method to call
                     'show'
                 ), $page, $this->meta_box['context'], $this->meta_box['priority']);
             } else { // if post type isn't a post or a page, we can add it just to the specific custom page template
                 $post_id       = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
                 $template_file = get_post_meta($post_id, '_wp_page_template', TRUE);
-                // check for a template type
+                // check for if current page matches our template
                 if ($template_file == $page) {
                     add_meta_box($this->id, $this->meta_box['title'], array(
-                        &$this,
+                        &$this, // callback function for rendering = array of class containing ref to class and method to call
                         'show'
                     ), 'page', $this->meta_box['context'], $this->meta_box['priority']);
                 }
@@ -70,7 +70,6 @@ class smart_meta_box
     // Callback function to show fields in meta box
 
     public function show($post) {
-
         // Use nonce for verification
         echo '<input type="hidden" name="' . $this->id . '_meta_box_nonce" value="', wp_create_nonce('smartmetabox' . $this->id) , '" />';
         echo '<table class="form-table">';
