@@ -51,6 +51,8 @@ add_action( 'widgets_init', 'theme_widgets_init' );
  *
  * To display any registered widget area, you simply call the dynamic_sidebar
  * wp function with the id of the widget area you wish to display
+ *
+ * This code goes in the php file of the page that is being rendered
  */
 
 dynamic_sidebar('sidebar-1');
