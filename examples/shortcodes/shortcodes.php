@@ -61,7 +61,7 @@ function foobar_shortcode( $atts, $content = null )
     return '<h1>' . $content . '</h1>';
 }
 add_shortcode( 'foobar', 'foobar_shortcode');
-// [foo]baz[/foo] returns '<h1>baz'</h1>'
+// [foo]baz[/foo] returns '<h1>baz</h1>'
 
 /**
  * Nesting shortcodes in self enclosed short codes
