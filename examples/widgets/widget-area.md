@@ -7,8 +7,8 @@ This includes:
 
 #Creating widget areas
 
-To create a widget area, you wrap a call to the wp function register_sidebar in a function declaration
-that acts as the widget areas init. The register_sidebar wp function accepts an array which defines the
+To create a widget area, you wrap a call to the wp function `register_sidebar` in a function declaration
+that acts as the widget areas init. The `register_sidebar` wp function accepts an array which defines the
 the params for the widget area you are looking to create. The init function is then bound to the 'widget_init'
 hook 
 
@@ -49,7 +49,7 @@ add_action( 'widgets_init', 'theme_widgets_init' );
 <a name="display"/>
 ##Displaying a widget area
 
-To display any registered widget area, you simply call the dynamic_sidebar
+To display any registered widget area, you simply call the `dynamic_sidebar`
 wp function with the id of the widget area you wish to display
 This code goes in the php file of the page that is being rendered
 
