@@ -1,4 +1,8 @@
-Example code on how to register/create a widget area and then display a registered widget area.
+#Wordpress widget areas
+
+Wordpress allows for widget areas to be defined and then configured from the dashboard and later displayed.
+
+This file contains example code on how to register/create a widget area and then display a registered widget area.
 This includes:
 - [Registering a single widget area](#register-single)
 - [Registering multiple widget areas](#register-multiple)
