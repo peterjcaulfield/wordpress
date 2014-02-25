@@ -2,11 +2,11 @@ The wordpress shortcode API provides a simple set of functions for creating macr
 
 This file details how to create enclosing/self-enclosing shortcodes as well as detailing the builtin shortcodes 
 that ship with wordpress. This includes:
-[Enclosed shortcodes](#enclosing)
-[Enclosed shortcodes with attributes](#enclosing-attr)
-[Self enclosed shortcodes](#self-enclosing)
-[Nested shortcodes](#nested)
-[Wordpresses builtin shortcodes](#builtin)
+- [Enclosed shortcodes](#enclosing)
+- [Enclosed shortcodes with attributes](#enclosing-attr)
+- [Self enclosed shortcodes](#self-enclosing)
+- [Nested shortcodes](#nested)
+- [Wordpresses builtin shortcodes](#builtin)
  
 
 <a name="enclosing"/>
