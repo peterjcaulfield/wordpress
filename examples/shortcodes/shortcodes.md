@@ -1,3 +1,5 @@
+#Wordpress shortcodes
+
 The wordpress shortcode API provides a simple set of functions for creating macro codes for use in post content.
 
 This file details how to create enclosing/self-enclosing shortcodes as well as detailing the builtin shortcodes 
