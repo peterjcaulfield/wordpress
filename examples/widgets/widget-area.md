@@ -14,7 +14,7 @@ hook
 
 This code goes in your functions.php file
 
-<a name="register-single">
+<a name="register-single"/>
 ##Register a single widget area
 ```php
 function theme_widgets_init() {
@@ -30,7 +30,7 @@ function theme_widgets_init() {
 // add our widget registering function to the widgets_init event
 add_action( 'widgets_init', 'theme_widgets_init' );
 ```
-<name="register-multiple"/>
+<a name="register-multiple"/>
 ##Registering multiple widget areas in one function call
 ```php
 function theme_widgets_init() {
@@ -46,7 +46,7 @@ function theme_widgets_init() {
 // add our widget registering function to the widgets_init event
 add_action( 'widgets_init', 'theme_widgets_init' );
 ```
-<name="display"/>
+<a name="display"/>
 ##Displaying a widget area
 
 To display any registered widget area, you simply call the dynamic_sidebar
